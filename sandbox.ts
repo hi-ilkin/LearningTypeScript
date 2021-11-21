@@ -2,31 +2,34 @@
  * Useful notes
  * - Compile by running : tsc sandbox.ts [sandbox.js]
  * - Continious compile : tsc sandbox.ts -w
+ * - Once something initially decalared, can't change structure and types
  */
 
-// arrays
-let names = ['robert', 'downey']
-names.push('jr');
+ // explicit type defining
+ let character: string;
+ let age: number;
+ let isLoggedIn: boolean;
 
-// not allowed
-// names.push(3);
+// arrays: initialize with empty array otherwise push won't work
+let ninjas: string[] = [];
+ninjas.push('str');
 
-// will put empty to index 3 and 4
-names[5] = 'tom';
-console.log(names);
-
-// defining mixed array. You can only push types are already available
-let mixed = ['ken', 4, 'str2', 5, false]
+// union types
+let mixed: (string|boolean)[] = [];
+mixed.push('hello');
 mixed.push(true);
+// mixed.push(10);
 
-// Objects: Once initially decalared, can't change structure and types
-let ninja = {
-    name: 'mario',
-    belt: 'yellow',
-    age: 30
-};
+let uid: string|number;
+uid = '123';
+uid = 123;
 
-ninja.age = 40;
-ninja.name = 'ryu';
-// ninja.age = '50'
-// name.skills = ['fighting']
+// objects
+let ninjaOne: object;
+ninjaOne = { name: 'yoshi', age: 30 };
+
+let ninjaTwo: {
+    name: string,
+    age: number,
+    belt: string
+}
