@@ -6,6 +6,10 @@
  * - Once something initially decalared, can't change structure and types
  */
 
+// defining type aliases
+type StrOrNum = string | number;
+type objWithName = { name: string, uid: StrOrNum };
+
 // 2 ways of defining arrow functions
 let func1: Function;
 func1 = () => {
@@ -17,8 +21,14 @@ const func2 = () => {
 }
 
 // defining function with arguments and return type
-const add = (a: number, b: number, optional_1?: number | string, opt_with_default: number = 3): number => {
+const add = (a: number, b: number, optional_1?: StrOrNum, opt_with_default: number = 3): number => {
     console.log(optional_1);
     console.log(opt_with_default);
     return a + b;
 }
+
+const greet = (user: objWithName) => {
+    console.log(`${user.name} with id = ${user.uid} says hello`);
+}
+
+greet({ name: 'ilkin', uid: '111' });

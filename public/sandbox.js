@@ -20,3 +20,7 @@ const add = (a, b, optional_1, opt_with_default = 3) => {
     console.log(opt_with_default);
     return a + b;
 };
+const greet = (user) => {
+    console.log(`${user.name} with id = ${user.uid} says hello`);
+};
+greet({ name: 'ilkin', uid: '111' });
