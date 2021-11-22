@@ -33,3 +33,10 @@ let ninjaTwo: {
     age: number,
     belt: string
 }
+
+// Dynamic (Any type)
+let new_age: any = 25;
+new_age = 'sl';
+new_age = true;
+
+let ninja_any: {name: any, age: any};

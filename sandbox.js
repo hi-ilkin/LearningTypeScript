@@ -23,3 +23,8 @@ uid = 123;
 var ninjaOne;
 ninjaOne = { name: 'yoshi', age: 30 };
 var ninjaTwo;
+// Dynamic (Any type)
+var new_age = 25;
+new_age = 'sl';
+new_age = true;
+var ninja_any;
