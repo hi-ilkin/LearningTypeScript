@@ -2,41 +2,23 @@
  * Useful notes
  * - Compile by running : tsc sandbox.ts [sandbox.js]
  * - Continious compile : tsc sandbox.ts -w
+ * - Initialize config file: tsc --init
  * - Once something initially decalared, can't change structure and types
  */
 
- // explicit type defining
- let character: string;
- let age: number;
- let isLoggedIn: boolean;
-
-// arrays: initialize with empty array otherwise push won't work
-let ninjas: string[] = [];
-ninjas.push('str');
-
-// union types
-let mixed: (string|boolean)[] = [];
-mixed.push('hello');
-mixed.push(true);
-// mixed.push(10);
-
-let uid: string|number;
-uid = '123';
-uid = 123;
-
-// objects
-let ninjaOne: object;
-ninjaOne = { name: 'yoshi', age: 30 };
-
-let ninjaTwo: {
-    name: string,
-    age: number,
-    belt: string
+// 2 ways of defining arrow functions
+let func1: Function;
+func1 = () => {
+    console.log("Function 1");
 }
 
-// Dynamic (Any type)
-let new_age: any = 25;
-new_age = 'sl';
-new_age = true;
+const func2 = () => {
+    console.log("Function 2");
+}
 
-let ninja_any: {name: any, age: any};
+// defining function with arguments and return type
+const add = (a: number, b: number, optional_1?: number | string, opt_with_default: number = 3): number => {
+    console.log(optional_1);
+    console.log(opt_with_default);
+    return a + b;
+}
