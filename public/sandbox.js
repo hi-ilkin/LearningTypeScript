@@ -1,3 +1,4 @@
+"use strict";
 /**
  * Useful notes
  * - Compile by running : tsc sandbox.ts [sandbox.js]
@@ -5,26 +6,26 @@
  * - Once something initially decalared, can't change structure and types
  */
 // explicit type defining
-var character;
-var age;
-var isLoggedIn;
+let character;
+let age;
+let isLoggedIn;
 // arrays: initialize with empty array otherwise push won't work
-var ninjas = [];
+let ninjas = [];
 ninjas.push('str');
 // union types
-var mixed = [];
+let mixed = [];
 mixed.push('hello');
 mixed.push(true);
 // mixed.push(10);
-var uid;
+let uid;
 uid = '123';
 uid = 123;
 // objects
-var ninjaOne;
+let ninjaOne;
 ninjaOne = { name: 'yoshi', age: 30 };
-var ninjaTwo;
+let ninjaTwo;
 // Dynamic (Any type)
-var new_age = 25;
+let new_age = 25;
 new_age = 'sl';
 new_age = true;
-var ninja_any;
+let ninja_any;
