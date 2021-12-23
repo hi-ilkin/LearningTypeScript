@@ -1,8 +1,10 @@
 /**
  * Useful notes
- * - Compile by running : tsc sandbox.ts [sandbox.js]
- * - Continious compile : tsc sandbox.ts -w
+ * - Compile single file by running : tsc sandbox.ts [sandbox.js]
+ * - Continious compile single file : tsc sandbox.ts -w
  * - Initialize config file: tsc --init
+ * - After creating better project structure following L#7, 
+ * Compile by tsc -w
  * - Once something initially decalared, can't change structure and types
  */
 
