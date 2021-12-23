@@ -34,3 +34,18 @@ const greet = (user: objWithName) => {
 }
 
 greet({ name: 'ilkin', uid: '111' });
+
+/** Dynamic types */
+// Variables type can change with any but not TS way.
+let age: any;
+age = 25;
+age = true;
+age = 'twenty five';
+console.log(age);
+
+// List with dynamic type
+let mixed: any[] = [];
+mixed.push(5);
+mixed.push('a string');
+mixed.push(false);
+console.log(mixed);

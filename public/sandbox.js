@@ -26,3 +26,16 @@ const greet = (user) => {
     console.log(`${user.name} with id = ${user.uid} says hello`);
 };
 greet({ name: 'ilkin', uid: '111' });
+/** Dynamic types */
+// Variables type can change with any but not TS way.
+let age;
+age = 25;
+age = true;
+age = 'twenty five';
+console.log(age);
+// List with dynamic type
+let mixed = [];
+mixed.push(5);
+mixed.push('a string');
+mixed.push(false);
+console.log(mixed);
