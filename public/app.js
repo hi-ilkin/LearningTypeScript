@@ -1,4 +1,21 @@
 "use strict";
+/** CLASSES */
+class Invoice {
+    constructor(c, d, a) {
+        this.client = c;
+        this.details = d;
+        this.amount = a;
+    }
+    format() {
+        return `${this.client} owes ${this.amount} for ${this.details}`;
+    }
+}
+const invOne = new Invoice('mario', 'website', 40);
+let invoices = [];
+invoices.push(invOne);
+// by default properties are public
+invOne.client = 'luigi';
+console.log(invoices);
 /** DOM & TYPE CASTING */
 // ! at the end means that developer is sure that anchor variable won't be null
 const anchor = document.querySelector('a');
