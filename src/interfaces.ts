@@ -20,7 +20,7 @@ const drink = {
  * and two functions.
  */
 
-interface Car {
+interface ICar {
   name: string;
   year: number;
   broken: boolean;
@@ -33,7 +33,7 @@ interface Car {
  * This instance is type of Car interface and must implement
  * its functions.
  */
-const oldCivic: Car = {
+const oldCivic: ICar = {
   name: 'civic',
   year: 2000,
   broken: true,

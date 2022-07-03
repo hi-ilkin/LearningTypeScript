@@ -31,4 +31,10 @@ const report = (vehicle) => {
 report(oldCivic);
 oldCivic.updateOwner({ name: 'emin', age: 25 });
 report(oldCivic);
+/**
+ * Report function accepts argument type of Reportable.
+ * Reportable interface only requires summary() function.
+ * Since drink object has that function, it is also accepted
+ * as Reportable interface
+ */
 report(drink);
