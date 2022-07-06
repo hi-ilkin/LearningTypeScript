@@ -1,23 +1,10 @@
 {
-  "name": "LearningTypeScript",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "devDependencies": {
+    "@faker-js/faker": "^7.3.0",
+    "typescript": "^4.7.4"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/huseynlilkin/LearningTypeScript.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/huseynlilkin/LearningTypeScript/issues"
-  },
-  "homepage": "https://github.com/huseynlilkin/LearningTypeScript#readme",
   "dependencies": {
-    "axios": "^0.27.2"
+    "@types/google.maps": "^3.49.2",
+    "faker": "^5.5.3"
   }
 }
