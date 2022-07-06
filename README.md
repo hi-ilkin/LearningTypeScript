@@ -10,6 +10,10 @@
 
 `node {file_name}`
 
+- parcel-bundler : tool to help us run typescript in the browser
+
+`npm install -g parcel-bundler`
+
 ## Libraries used
 
 - **axios** - to make API requests
