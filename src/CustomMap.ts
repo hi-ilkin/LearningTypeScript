@@ -19,6 +19,14 @@ export class CustomMap {
       map: this.map,
       position: mappable.location,
     });
+
+    marker.addListener('click', () => {
+      const infoWindow = new google.maps.InfoWindow({
+        content: 'Hi there'
+      });
+
+      infoWindow.open(this.map, marker);
+    })
   };
 
   setLocation = (mappable: Mappable) => {
